@@ -1,7 +1,8 @@
 # WbTstr.Net-Email
 Simple e-mail client to test e-mail messages with WbTstr.Net or FluentAutomation
 
-Sample Usage
+##Sample Usage
+
 //First create the email config object
 var emailConfig = new EmailConfig
             {
