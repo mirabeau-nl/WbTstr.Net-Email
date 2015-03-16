@@ -1,8 +1,7 @@
 # WbTstr.Net-Email
 Simple e-mail client to test e-mail messages with WbTstr.Net or FluentAutomation
 
-'''
-
+Sample Usage
 //First create the email config object
 var emailConfig = new EmailConfig
             {
@@ -28,6 +27,3 @@ I.Assert.Exists("H1");
 
 //You can also see the attachments
 var attachments =email.Attachment;
-            
-            
-'''
