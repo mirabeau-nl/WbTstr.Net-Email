@@ -1,6 +1,7 @@
 # WbTstr.Net-Email
 Simple e-mail client to test e-mail messages with WbTstr.Net or FluentAutomation.
 
+<<<<<<< HEAD
 ##Example
             
     //First create the email config object
@@ -12,6 +13,22 @@ Simple e-mail client to test e-mail messages with WbTstr.Net or FluentAutomation
 	Port = 995,
 	UseSsl = true
 	};
+=======
+##Sample Usage
+
+//First create the email config object
+var emailConfig = new EmailConfig
+            {
+                UserName = "test@gmail.com",
+                Password = "topSecret",
+                HostName = "pop.gmail.com",
+                Port = 995,
+                UseSsl = true
+            };
+
+//Create an instance of the Email tool            
+var emailTool = new EmailTool(emailConfig);
+>>>>>>> 496097fda3c8bbe3d5946aee4cbf8c7ff2289788
 
 	//Create an instance of the Email tool
 	var emailTool = new EmailTool(emailConfig);
@@ -22,9 +39,14 @@ Simple e-mail client to test e-mail messages with WbTstr.Net or FluentAutomation
 	//Download the e-mails
 	var email = emailTool.GetMail();
 
+<<<<<<< HEAD
 	//Navigate to the e-mail html in your browser and perform validations
 	I.Open(email.HtmlEmailPath);
 	I.Assert.Exists("H1");
 	
 	//You can also see the attachments
 	var attachments =email.Attachment;
+=======
+//You can also see the attachments
+var attachments =email.Attachment;
+>>>>>>> 496097fda3c8bbe3d5946aee4cbf8c7ff2289788
